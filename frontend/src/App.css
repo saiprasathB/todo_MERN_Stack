@@ -1,0 +1,144 @@
+/*Prevents scrolling when a popup is displayed*/
+body.noscroll{
+  overflow-y: hidden;
+}
+
+
+
+
+.App{
+  background-color: #0a69d5;
+}
+
+.navbar{
+ background-color: #0a69d5;
+ color: aliceblue;
+ max-width: fit-content;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+
+.footer{
+  width: 100%;
+  color: white;
+  background-color: rgb(26, 26, 26);
+  padding: 10px;
+  height: 60px;
+  margin-top: 200px;
+}
+
+.footer h3 {
+  text-align: center;
+}
+
+.footer a {
+  color: rgb(0, 119, 255);
+  text-decoration: none;
+}
+
+.item-btn-row{
+  display: flex;
+  gap: 10px;
+}
+
+.todo-item-container{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+  gap: 20px;
+}
+
+.todo-item{
+  border-radius: 10px;
+  border: solid 1px rgba(128, 128, 128, 0.169);
+  background-color: white;
+  padding: 10px;
+  margin: auto;
+  max-width: 300px;
+}
+
+.todo-item p {
+  max-width: 300px;
+}
+
+.todo-item h3{
+ font-size: 17px;
+ color: rgb(48, 48, 48);
+}
+
+.todo-item h3 span {
+  font-size: 15px;
+  color: rgb(82, 82, 82);
+}
+
+.edit-popup-content,
+.todo-form{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto;
+  background-color: white;
+  border: solid 2px rgba(128, 128, 128, 0.326);
+  border-radius: 10px;
+  padding: 20px 40px;
+}
+
+.edit-popup-content textarea,
+.todo-form textarea{
+  height: 150px;
+  width: 300px;
+  resize: none;
+}
+
+.edit-popup-content form,
+.todo-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.edit-popup-content h1,
+.todo-form h1{
+  margin: auto;
+  font-weight: 600;
+}
+
+.edit-btn-row{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.edit-popup-container,
+.todo-form-container{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.619);
+  backdrop-filter: blur(3px);
+  z-index: 100;
+}
+
+.create-btn{
+  position: fixed;
+  right: 5%;
+  bottom: 10%;
+  background-color: #109be0;
+  color: white;
+  border: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  transition: 0.2s;
+}
+
+.create-btn:hover{
+  background-color: #13673f;
+}
+
+.create-btn:active{
+  background-color: #0f4e30;
+}
